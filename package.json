@@ -1,5 +1,5 @@
 {
-  "name": "twitter-web-react",
+  "name": "profakademi",
   "version": "1.0.0",
   "license": "ISC",
   "scripts": {
@@ -18,7 +18,8 @@
     "next-compose-plugins": "^2.2.0",
     "next-pwa": "^2.6.1",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "sass": "^1.26.10"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",

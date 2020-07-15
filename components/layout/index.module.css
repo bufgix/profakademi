@@ -1,3 +1,4 @@
 .layout {
-  padding: 2rem;
+  display: flex;
+  padding: 2rem 0 2rem 0;
 }

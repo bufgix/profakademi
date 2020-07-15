@@ -1,49 +1,25 @@
 import React, { useContext } from 'react'
 import Head from 'next/head'
-import StoreContext from '../store'
 
 import Layout from '../components/layout'
-import Button from '../components/button'
-import * as Icon from '../components/icons'
-import { THEME } from '../constants'
+import Wave from '../components/Wave'
+import Cards from '../components/cards'
 
 function HomePage() {
-  const store = useContext(StoreContext)
-
   return (
     <Layout>
       <Head>
         <title>Home Page</title>
       </Head>
-
-      <h1>Home page</h1>
-
-      <br />
-
-      <Icon.Search style={{ fontSize: 24 }} />
-
-      <br />
-      <br />
-
-      <div>
-        Change Theme{' '}
-        <Button
-          onClick={() =>
-            store.changeTheme(
-              store.theme === THEME.LIGHT ? THEME.DARK : THEME.LIGHT
-            )
-          }
-        >
-          {store.theme === THEME.LIGHT ? 'Dark' : 'Light'}
-        </Button>
+      <div className="banner">
+        <h1>neden biz?</h1>
+        <div className="banner-meta">
+          ÇÜNKÜ BİZ, BAŞARILI BİREY SORUMLU TOPLUM İÇİN VARIZ ÖĞRENCİLERİMİZİN
+          İSTEKLERİNE KULAK VERİYORUZ.
+        </div>
       </div>
-
-      <br />
-      <br />
-
-      <div>
-        API url (env): <b>{process.env.API_URL}</b>
-      </div>
+      <Wave />
+      <Cards />
     </Layout>
   )
 }

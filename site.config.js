@@ -1,11 +1,11 @@
 module.exports = {
-  title: 'Next Template',
-  description: 'Next PWA Template',
+  title: 'Profesyonel Akademi',
+  description: 'Profosyonel Akademi Resmi Web Sayfası',
   siteUrl: 'https://github.com/ademilter/next-web-template',
   googleAnalytic: 'X-XXXXXXXXXX',
   author: {
-    email: 'ademilter@gmail.com',
-    name: 'Adem ilter'
+    email: 'ooruc471@yandex.com',
+    name: 'Ömer Faruk Oruç'
   },
-  lang: 'en'
+  lang: 'tr'
 }

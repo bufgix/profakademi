@@ -6,10 +6,16 @@ import Nav from '../nav'
 
 function Layout({ children }) {
   return (
-    <div className={styles.layout}>
+    <React.Fragment>
       <Nav />
-      <main>{children}</main>
-    </div>
+      <div className={styles.layout}>
+        <main
+          style={{ display: 'flex', flexDirection: 'column', width: '100%' }}
+        >
+          {children}
+        </main>
+      </div>
+    </React.Fragment>
   )
 }
 
