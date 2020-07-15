@@ -28,6 +28,48 @@
   left: 10%;
 }
 
+.flipper {
+  -webkit-animation-name: flip;
+  animation-name: flip;
+  -webkit-animation-duration: 0.6s;
+  animation-duration: 0.6s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 3s;
+  animation-delay: .2s;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes flip {
+  0% {
+    transform: perspective(400px) rotateY(0);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: perspective(400px) rotateY(190deg);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: perspective(400px) rotateY(360deg);
+    animation-timing-function: ease-in;
+  }
+}
+
+@keyframes flip {
+  0% {
+    transform: perspective(400px) rotateY(0);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: perspective(400px) rotateY(190deg);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: perspective(400px) rotateY(360deg);
+    animation-timing-function: ease-in;
+  }
+}
+
 .navLinks {
   display: flex;
   justify-content: space-around;
