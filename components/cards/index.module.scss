@@ -1,15 +1,27 @@
 .CartWrapper {
-  position: relative;
   width: 100%;
   display: flex;
   background-color: var(--b-primary);
-  min-height: 200px;
+  z-index: 1;
 }
 
 .Cards {
-  position: absolute;
-  top: -60%;
+  margin-top: -150px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 100%;
+  
+}
+
+@media screen and (max-width: 768px){
+  .Cards {
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Cards {
+    flex-direction: column;
+    align-items: center;
+  }
 }

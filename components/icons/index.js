@@ -1,2 +1,5 @@
+export { default as Book } from './Book'
+export { default as Cap } from './Cap'
 export { default as Logo } from './Logo'
 export { default as Search } from './Search'
+export { default as Smile } from './Smile'

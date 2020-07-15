@@ -20,6 +20,7 @@ function HomePage() {
       </div>
       <Wave />
       <Cards />
+      <h1>asdlkasjd</h1>
     </Layout>
   )
 }
