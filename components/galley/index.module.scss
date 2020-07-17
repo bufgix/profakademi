@@ -19,14 +19,21 @@
 
 .photos {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .photo {
   width: 100px;
   height: 100px;
   margin: 10px;
-  background-color: lightcyan;
+  transition: transform 0.5s;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.photo:hover {
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 768px) {
@@ -35,12 +42,22 @@
     width: 90%;
     margin-left: 10px;
   }
+
+  .photos {
+    grid-template-columns: auto auto;
+  }
 }
 
-
 @media screen and (max-width: 600px) {
+  .gallery {
+    margin-top: 10px;
+  }
   .photo {
     width: 80px;
     height: 80px;
+  }
+
+  .photos {
+    grid-template-columns: auto auto auto;
   }
 }

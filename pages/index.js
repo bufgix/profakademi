@@ -1,11 +1,13 @@
 import React, { useContext } from 'react'
 import Head from 'next/head'
+import TrackVisibility from 'react-on-screen'
 
 import Layout from '../components/layout'
 import Wave from '../components/Wave'
 import Cards from '../components/cards'
 import Vision from '../components/vision'
 import Gallery from '../components/galley'
+import Statics from '../components/statics'
 
 function HomePage() {
   return (
@@ -26,6 +28,9 @@ function HomePage() {
         <Vision />
         <Gallery />
       </div>
+      <TrackVisibility once>
+        <Statics />
+      </TrackVisibility>
     </Layout>
   )
 }

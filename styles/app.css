@@ -51,10 +51,15 @@ img {
 
 .content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background-color: var(--b-primary);
   color: white;
   padding: 30px 80px 30px 80px;
+}
+
+.content::before,
+.content::after {
+  content: '';
 }
 
 @media screen and (max-width: 600px) {

@@ -18,7 +18,10 @@
     "next-compose-plugins": "^2.2.0",
     "next-pwa": "^2.6.1",
     "react": "^16.13.1",
+    "react-countup": "^4.3.3",
     "react-dom": "^16.13.1",
+    "react-on-screen": "^2.1.1",
+    "react-viewer": "^3.2.2",
     "sass": "^1.26.10"
   },
   "devDependencies": {
