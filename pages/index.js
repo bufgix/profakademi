@@ -4,6 +4,8 @@ import Head from 'next/head'
 import Layout from '../components/layout'
 import Wave from '../components/Wave'
 import Cards from '../components/cards'
+import Vision from '../components/vision'
+import Gallery from '../components/galley'
 
 function HomePage() {
   return (
@@ -20,7 +22,10 @@ function HomePage() {
       </div>
       <Wave />
       <Cards />
-      <h1>asdlkasjd</h1>
+      <div className="content">
+        <Vision />
+        <Gallery />
+      </div>
     </Layout>
   )
 }

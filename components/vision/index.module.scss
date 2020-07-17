@@ -1,0 +1,35 @@
+.vision {
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  text-align: left;
+}
+
+.visionHeader {
+  display: flex;
+  align-items: center;
+  font-weight: lighter;
+  font-size: 20px;
+
+  svg {
+    height: 3rem;
+    width: 3rem;
+    margin-right: 10px;
+  }
+}
+
+.visionText {
+  width: 65%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .vision {
+    width: 90%;
+    align-self: center;
+  }
+
+  .visionText {
+    width: 100%;
+  }
+}
