@@ -1,0 +1,49 @@
+.imageViewer {
+  display: flex;
+  position: fixed;
+  z-index: 3;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(black, 0.9);
+
+  svg {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+  }
+}
+
+.imageViewerClose {
+  display: none;
+}
+
+.imageContent {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+
+  img {
+    opacity: 1;
+    width: 90%;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .imageContent {
+    img {
+      width: 90%;
+      width: 90%;
+    }
+  }
+}

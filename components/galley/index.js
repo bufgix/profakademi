@@ -2,13 +2,16 @@ import React from 'react'
 
 import styles from './index.module.scss'
 import PhotoIcon from '../icons/Photo'
+import ImageViewer from '../ImageViewer'
 
 function Gallery() {
   const [images, setImages] = React.useState(
     Array(8)
       .fill(0)
-      .map((_, i) => ({ source: `/photos/${i + 1}.jpeg`, visible: false }))
+      .map((_, i) => ({ source: `/photos/${i + 1}.jpeg`, open: false }))
   )
+  const [currIndex, setCurrIndex] = React.useState(-1)
+  const [isOpen, setIsOpen] = React.useState(false)
 
   return (
     <div className={styles.gallery}>
@@ -24,8 +27,18 @@ function Gallery() {
             key={index}
             alt="photo"
             className={styles.photo}
+            onClick={() => {
+              setIsOpen(true)
+              setCurrIndex(index);
+            }}
           ></img>
         ))}
+        <ImageViewer
+          photos={images}
+          open={isOpen}
+          currentIndex={currIndex}
+          onClose={() => setIsOpen(false)}
+        />
       </div>
     </div>
   )
