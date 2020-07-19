@@ -19,7 +19,10 @@ function Information() {
             {!announcements.isLoading
               ? announcements.data.map((announcement, index) => (
                   <li key={index}>
-                    <ArrowIcon /> <span>{announcement.baslik}</span>
+                    <ArrowIcon />{' '}
+                    <a href={`/duyurular/${announcement.id}`} target="_blank">
+                      {announcement.baslik}
+                    </a>
                   </li>
                 ))
               : null}
