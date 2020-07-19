@@ -5,7 +5,7 @@ const isDev = process.env.NODE_ENV !== 'production'
 
 const nextConfig = {
   env: {
-    API_URL: isDev ? 'http://localhost:8000' : 'https://api.example.com/v1/'
+    API_URL: 'http://localhost:1337'
   },
   pwa: {
     dest: 'public',

@@ -49,17 +49,31 @@ img {
   text-align: center;
 }
 
+.contentWrapper {
+  background-color: var(--b-primary);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .content {
   display: flex;
-  justify-content: space-evenly;
-  background-color: var(--b-primary);
+  justify-content: space-between;
   color: white;
-  padding: 30px 80px 30px 80px;
+  width: 85%;
+  align-items: flex-start;
+  margin: 30px 0 20px 0;
 }
 
 .content::before,
 .content::after {
   content: '';
+}
+
+@media screen and (min-width: 1289px) {
+  .content {
+    width: 75%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -78,12 +92,12 @@ img {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    padding: 30px 0px 30px 0px;
+    width: 90%;
   }
 }
 
 @media screen and (max-width: 768px) {
   .content {
-    padding: 30px 10px 30px 10px;
+    width: 95%;
   }
 }

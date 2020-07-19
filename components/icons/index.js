@@ -1,6 +1,8 @@
+export { default as Arrow } from './Arrow'
 export { default as Book } from './Book'
 export { default as Cap } from './Cap'
 export { default as Cross } from './Cross'
+export { default as Doc } from './Doc'
 export { default as Logo } from './Logo'
 export { default as Pencil } from './Pencil'
 export { default as Photo } from './Photo'
