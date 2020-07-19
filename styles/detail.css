@@ -1,0 +1,33 @@
+.detailWrapper {
+  margin: 20px 0 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.detail {
+  width: 60%;
+}
+
+.detail-content img {
+  width: 80%;
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+.detail-content ol {
+  margin-left: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .detail {
+    width: 90%;
+  }
+  .detail > h1 {
+    font-size: 24px;
+  }
+
+  .detail-content img {
+    width: 95%;
+  }
+}
