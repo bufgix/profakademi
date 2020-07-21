@@ -4,10 +4,10 @@ import styles from './index.module.css'
 
 import Nav from '../nav'
 
-function Layout({ children }) {
+function Layout({ children, isDetail }) {
   return (
     <React.Fragment>
-      <Nav />
+      <Nav isDetail={isDetail} />
       <div className={styles.layout}>
         <main
           style={{ display: 'flex', flexDirection: 'column', width: '100%' }}

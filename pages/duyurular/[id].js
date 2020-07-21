@@ -40,7 +40,7 @@ function Image({ children, ...props }) {
 
 function Detail({ pageData }) {
   return (
-    <Layout>
+    <Layout isDetail>
       <div className="detailWrapper">
         <div className="detail">
           <h1 className="detail-title">{pageData.baslik}</h1>

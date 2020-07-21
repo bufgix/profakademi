@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import cn from 'classnames'
 import useFetch from 'react-fetch-hook'
 
@@ -19,10 +20,10 @@ function Information() {
             {!announcements.isLoading
               ? announcements.data.map((announcement, index) => (
                   <li key={index}>
-                    <ArrowIcon />{' '}
-                    <a href={`/duyurular/${announcement.id}`} target="_blank">
+                    <ArrowIcon color="black"/>
+                    <Link href={`/duyurular/${announcement.id}`}>
                       {announcement.baslik}
-                    </a>
+                    </Link>
                   </li>
                 ))
               : null}
@@ -35,10 +36,7 @@ function Information() {
             {!results.isLoading
               ? results.data.map((result, index) => (
                   <li key={index}>
-                    <DocIcon />{' '}
-                    <a href={result.pdflink} target="_blank">
-                      {result.isim}
-                    </a>
+                    <DocIcon /> <a href={result.pdflink}>{result.isim}</a>
                   </li>
                 ))
               : null}

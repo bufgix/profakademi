@@ -31,10 +31,10 @@ function HomePage() {
           <Gallery />
         </div>
       </div>
+      <Information />
       <TrackVisibility once>
         <Statics />
       </TrackVisibility>
-      <Information />
     </Layout>
   )
 }

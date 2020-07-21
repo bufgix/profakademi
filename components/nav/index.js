@@ -3,7 +3,7 @@ import React from 'react'
 import styles from './index.module.scss'
 import Logo from '../icons/Logo'
 
-function Nav() {
+function Nav({ isDetail }) {
   const navLinksRef = React.createRef(null)
 
   React.useEffect(() => {
@@ -19,11 +19,15 @@ function Nav() {
   }
 
   const animateLogo = () => {
-    const logo = document.getElementById('logo')
-    logo.style.webkitAnimation = 'none'
-    setTimeout(() => {
-      logo.style.webkitAnimation = ''
-    }, 10)
+    if (isDetail) {
+      window.location.href = '/'
+    } else {
+      const logo = document.getElementById('logo')
+      logo.style.webkitAnimation = 'none'
+      setTimeout(() => {
+        logo.style.webkitAnimation = ''
+      }, 10)
+    }
   }
 
   return (

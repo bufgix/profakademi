@@ -46,7 +46,7 @@
 
 .results {
   text-align: left;
-  flex: 4;
+  flex: 2;
 
   ul {
     list-style-type: none;
@@ -74,16 +74,22 @@
   }
 }
 
+@media screen and (min-width: 1289px) {
+  .information {
+    width: 75%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .information {
     width: 90%;
   }
   .announcements {
-    flex: 1;
+    flex: 3;
   }
 
   .results {
-    flex: 1;
+    flex: 2;
   }
 }
 
