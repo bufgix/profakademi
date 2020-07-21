@@ -20,7 +20,7 @@ function Statics({ isVisible }) {
             {({ countUpRef }) => <h3 ref={countUpRef} />}
           </CountUp>
         ) : null}
-        <div>Verilmli Ders</div>
+        <div>Verimli Ders</div>
       </div>
       <div className={styles.stat}>
         {isVisible ? (
