@@ -11,13 +11,12 @@ function Vision() {
         <h1>VİZYON</h1>
       </div>
       <div className={styles.visionText}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-        imperdiet, eros non suscipit lacinia, ante turpis euismod quam, vitae
-        placerat lacus ligula nec arcu. Sed tempus ornare dui et accumsan.
-        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-        cubilia curae; Nulla eu maximus purus. Ut vehicula lobortis tincidunt.
-        Donec euismod dui ligula. Vestibulum tincidunt bibendum est, eget semper
-        nisl fermentum sed. Aenean ultricies mauris at tincidunt fringilla. S
+        Profesyonel Akademi, başarıyı hedefleyen akademik kadrosu, yenilikçi
+        yöntemleri ihtiyaca yönelik çözümler üreten eğitim programı ile
+        öğrencilerimizin yeteneklerini geliştirerek, kendilerine güvenen, lider,
+        nitelikli ve başarılı bireyler olmalarını amaçlamaktadır. Profesyonel
+        Akademi, standartları en üst düzeyde olan öğretmen profili ve eğitim
+        programı ile örnek bir eğitim kurumu olmayı amaçlamaktadır.
       </div>
     </div>
   )
