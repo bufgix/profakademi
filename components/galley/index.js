@@ -6,7 +6,7 @@ import ImageViewer from '../ImageViewer'
 
 function Gallery() {
   const [images, setImages] = React.useState(
-    Array(8)
+    Array(7)
       .fill(0)
       .map((_, i) => ({ source: `/photos/${i + 1}.jpeg`, open: false }))
   )

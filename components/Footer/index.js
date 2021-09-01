@@ -16,7 +16,7 @@ import Logo from '../icons/Logo'
 function Footer() {
   return (
     <footer className={cn(styles.footerWrapper)}>
-      <div className={cn(styles.footer)}>
+      <nav className={cn(styles.footer)}>
         <div>
           <div className={cn(styles.title)}>
             <MapPin />
@@ -71,7 +71,7 @@ function Footer() {
             </ul>
           </div>
         </div>
-      </div>
+      </nav>
     </footer>
   )
 }
