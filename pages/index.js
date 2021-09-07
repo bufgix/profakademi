@@ -8,7 +8,7 @@ import Cards from '../components/cards'
 import Vision from '../components/vision'
 import Gallery from '../components/galley'
 import Statics from '../components/statics'
-import Information from '../components/Information'
+
 import Footer from '../components/Footer'
 
 function HomePage() {
@@ -32,7 +32,7 @@ function HomePage() {
           <Gallery />
         </div>
       </div>
-      <Information />
+
       <TrackVisibility once>
         <Statics />
       </TrackVisibility>

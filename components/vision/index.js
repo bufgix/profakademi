@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './index.module.scss'
 
 import PencilIcon from '../icons/Pencil'
+import Information from '../Information'
 
 function Vision() {
   return (
@@ -18,6 +19,7 @@ function Vision() {
         Akademi, standartları en üst düzeyde olan öğretmen profili ve eğitim
         programı ile örnek bir eğitim kurumu olmayı amaçlamaktadır.
       </div>
+      {/*    <Information /> */}
     </div>
   )
 }

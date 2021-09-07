@@ -1,8 +1,7 @@
 .gallery {
-  display: flex;
-  flex-direction: column;
+  width: 80%;
   flex: 2;
-  width: 30%;
+  align-self: center;
 }
 
 .galleryHeader {
@@ -38,26 +37,6 @@
 
 @media screen and (max-width: 768px) {
   .gallery {
-    align-self: flex-start;
-    width: 90%;
-    margin-left: 10px;
-  }
-
-  .photos {
-    grid-template-columns: auto auto;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .gallery {
-    margin-top: 10px;
-  }
-  .photo {
-    width: 80px;
-    height: 80px;
-  }
-
-  .photos {
-    grid-template-columns: auto auto auto;
+    width: 100%;
   }
 }
